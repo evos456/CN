@@ -16,7 +16,7 @@ void receiver(){
     printf("\n-----------------------------\n");
     printf("Data received: %s", data);
     crc();
-    for(i=0;(i<N-1) && (check_value[i]!='1');i++)
+    for(i=0;(i<N-1) && (check_value[i]!='1');i++);
         if(i<N-1)
             printf("\nError detected\n\n");
         else
@@ -33,7 +33,7 @@ void crc(){
             check_value[j]=check_value[j+1];
         check_value[j]=data[i++];
     }while(i<=data_length+N-1);
-    
+
 }
 
 int main()
