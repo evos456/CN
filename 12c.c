@@ -10,6 +10,7 @@ scanf("%d",&sb[i]);
 printf("\n enter length of file %d: ",i+1);
 scanf("%d",&m[i]);
 printf("enter blocks of file %d:",i+1);
+for(j=0;j<m[i];j++)
 scanf("%d",&b[i][j]);
 }
 printf("\nFile\tIndex\tLength\n");
