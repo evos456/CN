@@ -1,0 +1,8 @@
+//TO CREATE ANY FILE:
+gedit 1.c
+gedit 2.sh
+// TO RUN IN C:
+gcc 1.c
+./a.out
+// TO RUN IN SH:
+bash 2.sh
